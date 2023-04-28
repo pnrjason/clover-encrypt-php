@@ -18,7 +18,7 @@
     }
 
     $publicKey = getPublicKey($taPublicKey);
-    $input = sprintf("%s%s", "00000000", $cc);
+    $input = sprintf("%s%s", "00000000", $c);
     $publicKey->setEncryptionMode(RSA::ENCRYPTION_OAEP);
     $cipherText = $publicKey->encrypt($input);
 
